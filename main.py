@@ -1,16 +1,10 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+import numpy as np
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+a = [1,2,3,4]
+a.append([1,2,3])
+a += [[1,2],[2,3]]
+b = [1,2,3,4]
+b.extend([1,2,3])
+b.extend([[1,2],[2,3]])
+print(a,b)
